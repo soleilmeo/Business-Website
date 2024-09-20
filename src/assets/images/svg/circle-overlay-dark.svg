@@ -1,0 +1,12 @@
+<svg width="130" height="130" xmlns="http://www.w3.org/2000/svg" data-background-color="#2c2c2c" preserveAspectRatio="xMidYMid meet">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <defs>
+    <linearGradient id="grad-l">
+      <stop offset="0%" style="stop-color: #000000; stop-opacity: 0"/>
+      <stop offset="100%" style="stop-color: #000000; stop-opacity: 0.75"/>
+    </linearGradient>
+  </defs>
+  <ellipse ry="54.44444" rx="54.44444" id="svg_2" cy="64.72222" cx="65.11111" stroke-width="20" style="stroke: url(#grad-l)" fill="none"/>
+ </g>
+</svg>

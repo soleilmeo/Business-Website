@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta name="Description" content="Sign up to ITEC Solutions today and get in touch with our top experts from around the world."/>
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.nav.css">
+<style>
+    .form-text {
+        opacity: 0;
+        transition: opacity 300ms;
+    }
+    .error {
+        opacity: 1 !important;
+    }
+</style>
+
+<!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="/nav.js"></script>
+
+<title>Login - ITEC Solutions</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-on-top fixed-top justify-content-center">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="assets/images/svg/itec-solutions.svg"></a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" ><i class="fa fa-pencil" aria-hidden="true"></i> Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" ><i class="fa fa-pencil" aria-hidden="true"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" ><i class="fa fa-pencil" aria-hidden="true"></i> Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" ><i class="fa fa-pencil" aria-hidden="true"></i> Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" ><i class="fa fa-pencil" aria-hidden="true"></i> Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" ><i class="fa fa-pencil" aria-hidden="true"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3 mt-5">
+                <h3 class="display-4">Create Account</h3>
+                <form action="login.html" method="post">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="username">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username">
+                            <img src="assets/images/spin.gif" alt="">
+                        </div>                        
+                        <small id="usernameHelp" class="form-text text-danger username-error">Username is must be between 5-20 characters!</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                        <small id="emailHelp" class="form-text text-danger email-error">Please enter a valid email!</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="pw1">Enter Password</label>
+                        <input type="password" class="form-control" id="pw1" name="pw1" placeholder="Enter password...">
+                        <small id="pw1Help" class="form-text text-danger pw1-error">Password must be longer than 5 characters!</small>
+                    </div>       
+                    <div class="form-group">
+                        <label for="pw2">Confirm Password</label>
+                        <input type="password" class="form-control" id="pw2" name="pw2" placeholder="Confirm password...">
+                        <small id="pw2Help" class="form-text text-danger pw2-error">Passwords do not match!</small>
+                    </div>
+                    <div class="form-group mt-3 mb-3">
+                        <input type="checkbox" name="sub" id="sub"> Subscribe to our newsletter. <br>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary btn-lg btn-block"><i class="fa fa-arrow-up" aria-hidden="true"></i>  Create Account</button>
+                </form>
+            </div> 
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="mt-5 text-light p-5">
+        <div class="container pb-5">
+            <h2>ITEC Solutions, 2023</h2>
+        </div>
+    </footer>
+
+<script src="main.js"></script>
+<script src="login.js"></script>
+</body>
+</html>

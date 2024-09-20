@@ -1,0 +1,88 @@
+/* navigation bar common style */
+/* BAR SHOULD BE 56px UNLESS ADJUSTMENTS ARE REQUIRED */
+
+.navbar {
+    transform-style: preserve-3d;
+    transition: background-color 300ms ease-in-out, opacity 300ms ease-in-out;
+    z-index: 3;
+}
+
+.navbar-toggler {
+    background-color: var(--col-primary-transparent-accent);
+}
+
+.navbar-on-top {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.fixed-top .navbar-collapse.collapse {
+    max-height: calc(100vh - 56px - 56px); /* browser bar height approximately 56px */
+}
+
+.fixed-top .navbar-collapse.collapse.show {
+    overflow-y: auto;
+}
+
+.navbar-burger-menu-shown {
+    background-color: var(--col-primary-accent);
+}
+
+.navbar-not-on-top {
+    background-color: var(--col-primary-accent) !important;
+}
+
+.navbar-brand img {
+    scale: calc(40 / 137)px;
+    max-height: 40px;
+}
+
+.navbar-nav {
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.nav-item {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.nav-item:hover {
+    background-color: var(--col-nav-dark-accent);
+}
+
+.nav-item.active {
+    font-weight: bolder !important;
+}
+
+.nav-item .nav-link .login-text {
+    display: inline-block;
+}
+
+/* works as long as navbar-expand-lg is there */
+
+@media (min-width: 992px) {
+    .fixed-top .navbar-collapse {
+        max-height: none;
+    }
+
+    .nav-item {
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+
+    .nav-item .nav-link .login-text {
+        display: none;
+    }
+
+    .navbar-nav {
+        background-color: var(--col-primary-overlay-accent);
+        overflow: hidden;
+    }
+
+    .navbar-burger-menu-shown {
+        background-color: rgba(0, 0, 0, 0);    
+    }
+}
